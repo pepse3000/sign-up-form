@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blue-color: #5d73ef;
+    --gray-color: #D9D9D9;
+}
+
+body {
+    background: url(./mountains.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 25vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 0px 3px #4758b6;
+}
+
+.content {
+    margin-top: 20vh;
+}
+
+.input-field {
+    position: relative;
+}
+
+select {
+    border: none;
+    border: 2px solid var(--gray-color);
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    border: 2px solid var(--gray-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+input:focus,
+input:focus-visible {
+    transition: 0.1s;
+    scale: 1.01;
+    border: 2px solid var(--blue-color);
+    outline: 0;
+}
+
+input:focus ~ span,
+input:valid ~ span {
+    padding: 0 5px;
+    background: white;
+    font-weight: 600;
+    transform: translateX(0px) translateY(-9px);
+}
+
+
+[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: var(--blue-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    width: 20rem;
+}
+
+
+.input-choice {
+    display: flex;
+}
+
+.input-wrapper {
+    font-size: 18px;
+    margin: 0px 5px 5px 0px;
+    padding: 5px 5px 0px 5px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-color);
+    flex: auto;
+}
+
+span {
+    position: absolute;
+    transition: all .4s;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    left: 30px;
+    pointer-events: none;
+}

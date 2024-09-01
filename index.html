@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="form-side"></div>
+        <div class="form-main">
+            <form>
+                <h1>Form</h1>
+                <div class="input-field">
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username" required>
+                    <span>UserName</span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" required>
+                    <span>E-mail</span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field">
+                    <label for="pswd"></label>
+                    <input type="password" name="pswd" id="pswd" required>
+                    <span>Password</span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field">
+                    <select name="country" id="country" required>
+                        <option hidden></option> 
+                        <option value="brazil">Brazil</option>
+                        <option value="china">China</option>
+                        <option value="germany">Germany</option>
+                        <option value="poland">Poland</option>
+                        <option value="united_states">United States</option>
+                        <option value="russia">Russia</option>
+                    </select>
+                </div>
+                <div class="choose-field">
+                    <h3 class="main-text">Level of development</h3>
+                    <div class="input-choice">
+                        <div class="input-wrapper">
+                            <input type="radio" name="dev_level" id="basic" value="basic" required checked>
+                            <label for="basic">Basic</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="radio" name="dev_level" id="medium" value="medium">
+                        <label for="medium">Medium</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="radio" name="dev_level" id="advanced" value="advanced">
+                        <label for="advanced">Advanced</label>
+                        </div>
+                    </div>  
+                </div>
+                <div class="input-field">
+                    <h3 class="main-text">Programming skills</h3>
+                    <div class="input-choice">
+                        <div class="input-wrapper">
+                            <input type="checkbox" name="prog_skills" id="js" value="js">
+                            <label for="js">JavaScript</label>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <input type="checkbox" name="prog_skills" id="html" value="html">
+                            <label for="html">HTML</label>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <input type="checkbox" name="prog_skills" id="css" value="css">
+                            <label for="css">CSS</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
