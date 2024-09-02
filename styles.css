@@ -64,9 +64,14 @@ select {
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
+    font: inherit;
+    color: var(--blue-color)
 }
 
+
+
 input {
+    font: inherit;
     border: none;
     border: 2px solid var(--gray-color);
     border-radius: 8px;
@@ -74,7 +79,9 @@ input {
 }
 
 input:focus,
-input:focus-visible {
+input:focus-visible,
+select:focus,
+select:focus-visible {
     transition: 0.1s;
     scale: 1.01;
     border: 2px solid var(--blue-color);
@@ -137,7 +144,7 @@ span {
     left: 0;
     top: 0;
     padding: 10px;
-    left: 30px;
+    left: 7px;
     pointer-events: none;
 }
 
@@ -168,3 +175,7 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     transform: scale(1);
   }
+
+input[type="radio"]:checked {
+    background-color: var(--blue-color);
+}
